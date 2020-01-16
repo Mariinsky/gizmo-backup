@@ -1,5 +1,10 @@
 # Gizmo - Media Sharing Application
 
+Devs: 
+ * Me: Backend and db
+ * ["Nikojoel"](https://github.com/Nikojoel): Front-end
+ * ["Jalmares"](https://github.com/Jalmares): CSS
+
 #### Only accessible with Metropolia VPN
 [Deployed project](https://10.114.34.120/app/index.html)
 
