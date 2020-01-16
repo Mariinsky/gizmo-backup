@@ -1,0 +1,775 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #fff;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0 9.2rem 0 9.3rem;
+}
+
+.main {
+    padding: 1rem 0 3.1rem 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: calc(80% - 1rem);
+    height: 100%;
+    display: inherit;
+}
+
+.sidebar {
+    width: 20%;
+    box-sizing: border-box;
+    height: fit-content;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 3.1rem 0 3.1rem 0;
+    margin-left: 1rem;
+}
+
+.header{
+    border-bottom: 1px solid gray;
+    padding-top: 1rem;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 5rem;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-top: 1px solid gray;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.hiddenBar {
+    display: none;
+}
+
+.visible {
+    display: grid;
+    font-size: larger;
+}
+
+.visible a:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.visibleBar {
+    display: inline-block;
+    margin: 0.5rem 1rem 0.5rem 2rem;
+    width: 0;
+}
+
+#newPostBar:hover,
+#home:hover,
+#votes:hover,
+#profile:hover,
+#sort:hover,
+#login:hover,
+#register:hover,
+#search:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
+
+.model {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modelContent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 1.25rem;
+    border: 1px solid #888;
+    width: 30%;
+    top: 50%;
+    right: 50%;
+}
+.modelContent img {
+    width: 50%;
+}
+
+.modelContent p {
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+
+.modelContent input {
+    background-color: white;
+    border-color: black;
+    border-radius: 0.6rem;
+    width: 60%;
+}
+
+.modelContent input[type="submit" i],
+.modelContent input[type="checkbox" i] {
+    width: auto;
+}
+
+.modelContent input[type="file" i] {
+    border-radius: 0;
+    margin-block-end: 1rem;
+    width: 100%;
+}
+
+.modelContent textarea {
+    background-color: white;
+    border-color: black;
+    border-radius: 0.6rem;
+    border-width: 0.1rem;
+    width: 60%;
+}
+
+#login-form input,
+#register-form input {
+    width: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main li {
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 1px solid gray;
+    padding: 1rem 0 1rem 0;
+    margin-left: 2.3rem;
+}
+
+ul {
+    margin: auto;
+    list-style: none;
+}
+
+#logo img{
+    height: 4.5rem;
+}
+
+.profPic {
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    right: 0;
+    float: left;
+    padding: 0.3rem;
+}
+
+#post:hover,
+#post:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    display: inline-block;
+    border-bottom: 1px solid gray;
+}
+
+#bioText {
+    padding: 0 0 0 2rem;
+    font-size: x-large;
+}
+
+#bioTextSmall i {
+    word-break: break-all;
+}
+
+#bioText h2 {
+    border-bottom: 1px solid gray;
+    width: fit-content;
+}
+
+#bio {
+    display: flex;
+}
+
+#postProfile {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    max-height: 5.4rem;
+}
+#postProfile:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+#postDesc {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: flex;
+}
+
+#logo {
+    float: left;
+    display: block;
+    padding-left: 20px;
+}
+
+#loginImg {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+#names {
+    font-weight: bold;
+    align-items: center;
+    display: inline-block;
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+#footerLinks {
+    float: right;
+    display: block;
+    padding-right: 1.2rem;
+}
+
+#postPic {
+    width: 80%;
+}
+#postPic img {
+    width: 100%;
+}
+
+#thumbNail {
+    width: 18.75rem;
+    height: 24.625rem;
+    cursor: pointer;
+}
+
+#postContent {
+    margin-left: 3rem;
+    padding: 1rem 0 3.1rem 3.1rem;
+}
+
+#postContent p, img {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#userPost {
+    display: inline-block;
+    padding-left: 1.2rem;
+}
+
+#comments {
+    display: grid;
+    margin-left: 0;
+    width: 100%;
+}
+
+#comments p {
+    word-break: break-all;
+}
+
+#comments h3 {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#postVotes {
+    border-bottom: 1px solid gray;
+    display: inline-flex;
+    width: 100%;
+    float: right;
+}
+#postVotes p  {
+    padding: 0 0 0 1rem;
+}
+
+#searchText {
+    height: 2rem;
+    border-radius: 0.6rem;
+    border-color: gray;
+}
+
+#stickyList {
+    padding: 20px 0 0 0;
+}
+#stickyList img {
+    vertical-align: bottom;
+}
+
+#thumbNailVotes {
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+}
+
+#thumbUp {
+    margin: auto;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#commentCount {
+    margin: auto;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#userNameSize {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 0.4rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    bottom: 0;
+}
+
+#titleSize {
+    font-size: 1.5rem;
+    margin-top: 0;
+    max-width: 18.68rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.3rem;
+    color: gray;
+    overflow: hidden;
+    max-height: 1.75rem;
+}
+
+ #stickyList li {
+    padding: 1.2rem 0 0 0;
+}
+
+ #home h3,
+ #newPostBar h3,
+ #profile h3,
+ #votes h3,
+ #sort h3 {
+     display: inline-block;
+     margin: 0.5rem 1rem 0.5rem 2rem
+ }
+
+ .profileContent {
+     width: 40%;
+     padding-left: 1rem;
+     display: inline-block;
+ }
+ .profileContent img {
+     width: 100%;
+ }
+ .profilebio {
+     display: inline-block;
+     margin-top: 3rem;
+     padding-left: 2rem;
+ }
+
+ #profileInfo {
+     width: 80%;
+     display: inline-block;
+ }
+
+ #profileInfo img {
+     width: 100%;
+ }
+
+ #profileInfo h5 {
+     margin-block-start: 1rem;
+ }
+
+ #loginProfile {
+     float: right;
+     display: flex;
+     align-items: center;
+ }
+
+ #picAndName {
+     display: inline-flex;
+     align-items: center;
+     cursor: pointer;
+ }
+
+ #logOut {
+     padding-top: 1rem;
+     padding-left: 1rem;
+     cursor: pointer;
+ }
+
+ #yourVotes {
+     padding: 1rem 0 0 3.1rem;
+ }
+
+ #voteStyle {
+     width: 50%;
+     display: block;
+     align-items: center;
+     flex-direction: row;
+ }
+
+ #voteThumb {
+     display: inline-block;
+     width: 1.9rem;
+     height: 1.9rem;
+ }
+
+ #voteHeader {
+     background-color: #fefefe;
+     margin: 0 auto;
+     top: 0;
+     right: 50%;
+ }
+
+ #yourVotesText {
+     padding-top: 1rem;
+     padding-left: 5rem;
+     cursor: pointer;
+ }
+
+ #imgSend{
+     width: 1.8rem;
+     height: 1.5rem;
+ }
+
+ #comment-form {
+     display: flex;
+     margin-top: 2rem;
+ }
+
+ #commentBox {
+    width: 33rem;
+ }
+ .footerIcons img {
+     width: 2rem;
+ }
+
+.footerIcons li{
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+#editProfile {
+    width: 10%;
+}
+
+h3 {
+    color: black;
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
+}
+
+#loginImg h3 {
+    display: inline-block;
+    padding: 0 0 0 1rem;
+}
+
+h5 {
+    border-bottom: 1px solid black;
+    width: fit-content;
+    margin: 0;
+}
+
+#profileBio {
+    word-break: break-all;
+    margin-top: 1rem;
+}
+
+#profileBio h3 {
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+
+input[type="submit" i]:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+input {
+    padding: 0.25rem;
+}
+
+textarea {
+    padding: 0.25rem;
+}
+
+
+
+/*
+Media queries for mobile devices starting @ 1212 px width
+ */
+
+@media only screen and (max-width: 1212px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: relative;
+        padding: 0 1rem 0 1rem;
+    }
+
+    #editProfile {
+        width: auto;
+    }
+
+    input[type="submit" i] {
+        margin-block-start: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: relative;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .main {
+        padding: 1rem 1rem 3.1rem 0;
+        background-color: #fff;
+        box-sizing: border-box;
+        height: 100%;
+        display: inherit;
+    }
+
+    .modelContent {
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    #stickyList h3 {
+        width: 0;
+    }
+    .main {
+        display: block;
+    }
+    .profileContent {
+        display: block;
+        width: 100%;
+    }
+    .profileBio {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    #search-form {
+        margin: 0;
+    }
+
+    #searchText {
+        width: 4rem;
+    }
+
+    #stickyList h3 {
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: relative;
+        padding: 0 1rem 0 1rem;
+        width: 100%;
+    }
+
+    .main li {
+        display: inline-block;
+        vertical-align: top;
+        border-bottom: 1px solid gray;
+        padding: 1rem 0 1rem 0;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 535px) {
+    #logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .container {
+        padding: 0;
+    }
+
+    #newPostBar,
+    #profile,
+    #votes,
+    #sort,
+    #search {
+        padding: 0;
+    }
+
+    #stickyList {
+        display: flex;
+        padding: 0;
+        background-color: #d6d6d6;
+    }
+
+    #stickyList li {
+        padding: 0;
+    }
+
+    #home h3,
+    #newPostBar h3,
+    #profile h3,
+    #votes h3,
+    #sort h3,
+    #search h3 {
+        display: none;
+    }
+
+    #dropDownContent {
+        background-color: white;
+    }
+
+    #loginImg {
+        display: inline-flex;
+        align-items: center;
+        float: none;
+    }
+
+    #loginImg h3 {
+        padding: 0;
+    }
+
+    #postPic {
+        width: 20rem;
+    }
+
+    #commentBox {
+        margin: 0 0 2rem 0;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #loginProfile {
+        display: block;
+        align-items: center;
+        float: none;
+    }
+
+    .profileContent {
+        padding: 2rem;
+        display: block;
+
+    }
+    .profileBio {
+        display: block;
+    }
+
+    .profileContent h1 {
+        border: none;
+    }
+
+    #voteContent {
+        padding: 1rem;
+    }
+
+
+    #postContent {
+        padding: 0;
+        margin: 0 0 0 2rem;
+        width: 100%;
+    }
+
+    #voteHeader {
+        margin: 2rem;
+    }
+
+    .main {
+        left: 0;
+    }
+
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        height: 0;
+        top: calc(100% - 3rem);
+        right: 0;
+        padding: 0;
+    }
+
+    .visibleBar {
+        width: auto;
+    }
+
+    .hiddenBar {
+        display: inline-block;
+    }
+
+    .footer {
+        display: none;
+    }
+    .myvotes {
+        display: block;
+    }
+    .visible {
+        position: absolute;
+        font-size: large;
+        bottom: 5%;
+        left: 75%;
+    }
+
+    #voteStyle {
+        width: auto;
+    }
+}
+
