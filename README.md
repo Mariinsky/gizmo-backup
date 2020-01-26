@@ -5,8 +5,10 @@ Devs:
  * ["Nikojoel"](https://github.com/Nikojoel): Front-end
  * ["Jalmares"](https://github.com/Jalmares): CSS
 
-#### Only accessible with Metropolia VPN
-[Deployed project](https://10.114.34.120/app/index.html)
+#### Accessible with Metropolia VPN
+[Deployed project on metropolia centos server](https://10.114.34.120/app/index.html)
+#### Public acces
+[deployed project on AWS ec2](http://ec2-18-196-239-85.eu-central-1.compute.amazonaws.com:3000/)
 
 ---
 
